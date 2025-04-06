@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cozy Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&display=swap" rel="stylesheet"> 
+  <style>
+    /* Tablet (below 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sidebar .logo,
+  .sidebar .address {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sidebar .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .sidebar .menu li {
+    margin: 5px 10px;
+  }
+
+  .main-content .welcome {
+    position: static;
+    width: 90%;
+    margin: 30px auto;
+    transform: none;
+  }
+
+  .main-content {
+    padding: 10px;
+    height: auto;
+  }
+
+  .main-content .welcome h1 {
+    font-size: 32px;
+  }
+
+  .main-content .welcome p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile (below 480px) */
+@media (max-width: 480px) {
+  .main-content .welcome {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .main-content .welcome h1 {
+    font-size: 28px;
+  }
+
+  .main-content .welcome p {
+    font-size: 15px;
+  }
+
+  .sidebar .menu a {
+    font-size: 16px;
+  }
+
+  .sidebar .logo h2 {
+    font-size: 20px;
+  }
+}
+</style>
+</head>
+<body>
+  <section id="home"></section>
+  <div class="container">
+    <!-- Left Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">
+        <h2>Crémeux</h2>
+        <p>Flavors Straight from the Bean</p>
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <div class="address">
+        <p>123 Bean Street,<br> Brewtown</p>
+        <p>Your Favorite Spot, Open 7 Days<br>8AM - 9PM</p>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="welcome">
+        <h1 style="font-family: 'Dancing Script', cursive;";>STEP INTO OUR COZY CAFE</h1>
+        <p style="font-family: 'Lora', serif;">The Cozy Cafe offers a warm and inviting atmosphere, 
+           where every cup of coffee is made with care and every bite is a delight. Whether you're looking to unwind with friends or enjoy a quiet moment alone, our menu is filled with delicious treats and refreshing beverages, perfect for every occasion.</p>
+      </section>
+    </main>
+</body>
+</html>
